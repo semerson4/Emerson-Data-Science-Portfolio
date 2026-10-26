@@ -2,8 +2,15 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-df_medalists = pd.read_csv('olympics_08')
-print(df_medalists.head())
+df = pd.read_csv('medalists.csv')
+print(df.head())
 
 
-df_medalists = pd.DataFrame
+df_melted = pd.melt(df, id_vars = ['medalist_name'],
+                    var_name = 'gender_sport',
+                    value_name = 'medal')
+
+#separate gender and sport into two columns
+df_melted[['gender', 'sport']] = df_melted['gender_sport'].str.split('_', expand=True)
+
+print(df_melted.head())
