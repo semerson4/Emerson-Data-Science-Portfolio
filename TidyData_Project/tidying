@@ -1,0 +1,9 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df_medalists = pd.read_csv('olympics_08')
+print(df_medalists.head())
+
+
+df_medalists = pd.DataFrame
