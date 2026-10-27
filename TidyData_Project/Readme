@@ -12,9 +12,9 @@ tidied. From there, refer to the "tidy.ipynb" file, and run each code box as ins
 ensure to have pandas, seaborn, and matplotlib.pyplot installed on your coding application of choice. If your coding application does non 
 populate the two visualizations, refer to the screenshots of them attached below:
 
-![Medals by Type](Medals by Type.png)
+![Medals by Type](TidyData_Project/medals_by_type.png)
 
-![Top 10 Sports by Medal](Top 10 Sports by Medal.png)
+![Sports by Medal](TidyData_Project/sports_by_medal.png)
 
 If for any reason the pivot table is also not populating, it is also attached below for reference:
 
