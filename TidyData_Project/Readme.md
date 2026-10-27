@@ -7,9 +7,9 @@ project are:
 - containing a row for each observation (such as a bronze medal)
 - giving each observational unit its own table (an observational unit in this dataset is one medal won)
 
-![Medals by Type](TidyData_Project/medals_by_type.png)
+![Medals_by_type](TidyData_Project/Medals_by_type.png)
 
-![Sports by Medal](TidyData_Project/sports_by_medal.png)
+![Sports_by_medal](TidyData_Project/Sports_by_medal.png)
 
 To run the notebook, first view the "medalists.csv" file to understand what the dataset originally looked like, and why it needed to be 
 tidied. From there, refer to the "tidy.ipynb" file, and run each code box as instructed and described by the markdown cells. If needed, 
