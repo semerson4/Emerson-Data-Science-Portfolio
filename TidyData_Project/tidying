@@ -2,15 +2,52 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+#Tidying ---------------------------------------------------------------------------
 df = pd.read_csv('medalists.csv')
-print(df.head())
-
 
 df_melted = pd.melt(df, id_vars = ['medalist_name'],
                     var_name = 'gender_sport',
                     value_name = 'medal')
 
-#separate gender and sport into two columns
-df_melted[['gender', 'sport']] = df_melted['gender_sport'].str.split('_', expand=True)
+#getting rid of all the NaN values
+df_tidy = df_melted.dropna(subset=["medal"]).copy()
 
-print(df_melted.head())
+#separate gender and sport into two columns
+df_tidy[['gender', 'sport']] = df_tidy['gender_sport'].str.split('_', expand=True)
+
+df_tidy.drop(columns=["gender_sport"], inplace=True)
+
+#getting rid of the ones that combine multiple sports so they're separate
+df_tidy['sport'] = df_tidy['sport'].str.replace(' and ', ' & ')
+
+#creating the new csv (so i can see what's going on)
+df_tidy.to_csv('tidy_medalists.csv', index=False)
+
+
+#Visualization ----------------------------------------------------------------------
+#Pie Chart for Medals by Gender
+#adding value counts so pie chart can be made
+df_medal = df_tidy['medal'].value_counts().reset_index()
+
+#pie chart - Medals by Type
+df_medal.plot.pie(y = 'count', labels = df_medal['medal'], autopct='%1.1f%%', title='Medals by Type (2008 Olympics)')
+plt.ylabel('')  
+plt.show()
+
+#Bar Chart for Medals by Sport
+#adding value counts again
+df_sport = df_tidy['sport'].value_counts().reset_index().head(10)
+
+#bar chart - Medals by Sport
+df_sport.plot.bar(x = 'sport', y = 'count', color='skyblue', title='Top 10 Sports by Medal Count (2008 Olympics)')
+plt.title('Top 10 Sports by Medal Count (2008 Olympics)')
+plt.xlabel('Sport')
+plt.ylabel('Number of Medals')
+plt.xticks(rotation=45, ha='right')
+plt.tight_layout()
+plt.show()
+
+#Pivot Table ----------------------------------------------------------------------
+#Let's pivot to see the number of medals by sport and gender
+df_pivot = df_tidy.pivot_table(values = 'medal', index = ['sport'], columns = ['gender'], aggfunc = 'count', fill_value = 0)
+print(df_pivot)
