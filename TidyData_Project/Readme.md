@@ -7,6 +7,10 @@ project are:
 - containing a row for each observation (such as a bronze medal)
 - giving each observational unit its own table (an observational unit in this dataset is one medal won)
 
+![Medals by Type](TidyData_Project/medals_by_type.png)
+
+![Sports by Medal](TidyData_Project/sports_by_medal.png)
+
 To run the notebook, first view the "medalists.csv" file to understand what the dataset originally looked like, and why it needed to be 
 tidied. From there, refer to the "tidy.ipynb" file, and run each code box as instructed and described by the markdown cells. If needed, 
 ensure to have pandas, seaborn, and matplotlib.pyplot installed on your coding application of choice. If your coding application does non 
