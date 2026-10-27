@@ -1,5 +1,21 @@
-Project Overview: Describe the goal of your project and provide a brief explanation of tidy data principles.
-Instructions: Include step-by-step instructions on how to run the notebook, along with dependencies (e.g., pandas, matplotlib, etc.).
-Dataset Description: Outline the source of your data and any pre-processing steps.
-References: Provide links to the cheat sheet and tidy data paper for further reading.
-Visual Examples: Consider adding screenshots of your visualizations or code snippets.
+Tidy Data Project Readme
+
+The goal of this tidy data project is to practice and understand tidy data principles, as applied to the 2008 medalists dataset. Tidy data is a standardized way to format a dataset in order to properly apply coding techniques to it. Some tidy data principles applied in this project are:
+- ensuring each variable has its own column (eg: gender or sport)
+- containing a row for each observation (such as a bronze medal)
+- giving each observational unit its own table (an observational unit in this dataset is one medal won)
+
+To run the notebook, first view the "medalists.csv" file to understand what the dataset originally looked like, and why it needed to be tidied. From there, refer to the "tidy.ipynb" file, and run each code box as instructed and described by the markdown cells. If needed, ensure to have pandas, seaborn, and matplotlib.pyplot installed on your coding application of choice. If your coding application does non populate the two visualizations, refer to the screenshots of them attached below:
+
+Figure 1
+
+Figure 2
+
+If for any reason the pivot table is also not populating, it is also attached below for reference:
+
+Pivot table
+
+This project references both the Pandas Cheat Sheet, and Hadley Wickham's "Tidy Data Principles" sourced from the Journal of Statistical Software. Both of those sources are attached below. 
+
+Pandas Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+Tidy Data Principles: https://vita.had.co.nz/papers/tidy-data.pdf

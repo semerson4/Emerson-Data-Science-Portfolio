@@ -31,7 +31,7 @@ df_medal = df_tidy['medal'].value_counts().reset_index()
 
 #pie chart - Medals by Type
 df_medal.plot.pie(y = 'count', labels = df_medal['medal'], autopct='%1.1f%%', title='Medals by Type (2008 Olympics)')
-plt.ylabel('')  
+plt.ylabel('')
 plt.show()
 
 #Bar Chart for Medals by Sport
