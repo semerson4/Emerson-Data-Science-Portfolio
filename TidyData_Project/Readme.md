@@ -7,14 +7,16 @@ project are:
 - containing a row for each observation (such as a bronze medal)
 - giving each observational unit its own table (an observational unit in this dataset is one medal won)
 
-<img src ="Medals_by_type.png" alt="Medals_by_type" width="400">
-
-<img src="Sports_by_medal.png" alt="Sports_by_medal" width="200">
-
 To run the notebook, first view the "medalists.csv" file to understand what the dataset originally looked like, and why it needed to be 
 tidied. From there, refer to the "tidy.ipynb" file, and run each code box as instructed and described by the markdown cells. If needed, 
 ensure to have pandas, seaborn, and matplotlib.pyplot installed on your coding application of choice. If your coding application does non 
-populate the two visualizations, refer to the screenshots attached in the folder ("Medals by Type" and "Sports by Medal")
+populate the two visualizations, refer to the screenshots attached in the folder or below ("Medals by Type" and "Sports by Medal").
+
+
+<img src ="Medals_by_type.png" alt="Medals_by_type" width="400">
+
+<img src="Sports_by_medal.png" alt="Sports_by_medal" width="400">
+
 
 This project references both the Pandas Cheat Sheet, and Hadley Wickham's "Tidy Data Principles" sourced from the Journal of Statistical 
 Software. Both of those sources are attached below. 
