@@ -7,10 +7,8 @@ project are:
 - containing a row for each observation (such as a bronze medal)
 - giving each observational unit its own table (an observational unit in this dataset is one medal won)
 
-![Medals_by_type](Medals_by_type.png)
-<img src = "Medals_by_type.png" alt="Medals_by_type" width='200>
+<img src ="Medals_by_type.png" alt="Medals_by_type" width="400">
 
-![Sports_by_medal](Sports_by_medal.png)
 <img src="Sports_by_medal.png" alt="Sports_by_medal" width="200">
 
 To run the notebook, first view the "medalists.csv" file to understand what the dataset originally looked like, and why it needed to be 
