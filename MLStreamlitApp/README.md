@@ -32,6 +32,9 @@ Here are some references I used in research and while coding this app:
 * https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 * https://jbhender.github.io/Stats506/F17/Projects/G13/Python.html 
 
+**Link to the default data set accessed:**
+https://www.kaggle.com/datasets/srisyra02/ecommerce-customer-behavior-dataset?resource=download  
+
 ------------------------------------------------------------------------------------
 **Here are some "frequently asked questions" that could be beneficial in understanding the capabilites of this app:**
 ------------------------------------------------------------------------------------
