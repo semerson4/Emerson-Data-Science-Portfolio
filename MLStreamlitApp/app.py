@@ -1,4 +1,6 @@
 #app setup and aestetics
+import os
+
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import Ridge
@@ -16,17 +18,18 @@ options = ["Use default data", "Upload your own data"]
 choice = st.selectbox("Choose an option:", options, index=None, placeholder = "Select an option")
 
 if choice is not None:
-  if choice == "Upload your own data":
-    uploaded_file = st.sidebar.file_uploader("Upload your own data", type=["csv"])
-    if uploaded_file is not None:
-      df_consumers = pd.read_csv(uploaded_file)
+    if choice == "Upload your own data":
+        uploaded_file = st.sidebar.file_uploader("Upload your own data", type=["csv"])
+        if uploaded_file is not None:
+            df_consumers = pd.read_csv(uploaded_file)
+        else:
+            st.stop()
     else:
-      st.stop()
-  else:
-    df_consumers = pd.read_csv("eCommerce-dataset.csv")
+        csv_path = os.path.join(os.path.dirname(__file__), "eCommerce-dataset.csv")
+        df_consumers = pd.read_csv(csv_path)
 else:
-  st.stop()
-
+    st.stop()
+    
 #filtering so only numeric columns can be selected
 numeric_cols = df_consumers.select_dtypes(include="number").columns
 target_column = st.selectbox("Select a target column:", numeric_cols)
