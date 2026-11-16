@@ -1,6 +1,10 @@
 Simply put, the purpose of this app is to test how well a machine learning model can predict a numeric outcome from any dataset. For more details, refer to the frequently asked questions section.
 
-**How to run app locally:**
+------------------------------------------------------------------------------------
+**How to access the app**
+------------------------------------------------------------------------------------
+
+**Running the app locally:**
 Use this link: https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/ if there are issues, follow the steps below:
 
 1. Download or clone the repository onto your own device through github
@@ -16,16 +20,21 @@ https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/
 * scikit-learn==1.9.1
 * matplotlib==3.10.0
 
+**Model Used:** Ridge Regression (a linear regression model)
 
-**Model Used:** Ridge Regression (a linear regression model)/
 **Hyperparameter:** The alpha slider
 
+------------------------------------------------------------------------------------
+**References**
+------------------------------------------------------------------------------------
 Here are some references I used in research and while coding this app:
 * https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 * https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
 * https://jbhender.github.io/Stats506/F17/Projects/G13/Python.html 
 
+------------------------------------------------------------------------------------
 **Here are some "frequently asked questions" that could be beneficial in understanding the capabilites of this app:**
+------------------------------------------------------------------------------------
 
 **What is this regression model?**
 This multiple regression model is called a Multiple Ridge Regression. It is a type of multiple linear regression that uses an alpha level to prevent overfitting. The word “ridge” accounts for the fact that there are many potential columns that can be regressed all at once for a single numeric target. It is also beneficial to prevent multicollinearity (heavily correlated independent variables) since it adds shrinkage.
