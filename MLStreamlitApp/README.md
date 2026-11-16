@@ -1,13 +1,15 @@
 Simply put, the purpose of this app is to test how well a machine learning model can predict a numeric outcome from any dataset. For more details, refer to the frequently asked questions section.
 
-a link to your deployed app
+How to run app locally:
 
-step-by-step instructions for running the app locally
+Link to deployed app:
 
-the libraries needed, with versions
 
-Model Used: Ridge Regression (a linear regression model)
-Hyperparameter: The alpha slider
+Libraries needed:
+
+
+**Model Used:** Ridge Regression (a linear regression model)
+**Hyperparameter:** The alpha slider
 
 Here are some references I used in research and while coding this app:
 https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
