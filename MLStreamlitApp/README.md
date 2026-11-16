@@ -11,13 +11,13 @@ Use this link: https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.str
 https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/ 
 
 **Libraries needed with versions:**
-streamlit==1.48.0
-pandas==2.3.1
-scikit-learn==1.9.1
-matplotlib==3.10.0
+* streamlit==1.48.0
+* pandas==2.3.1
+* scikit-learn==1.9.1
+* matplotlib==3.10.0
 
 
-**Model Used:** Ridge Regression (a linear regression model)
+**Model Used:** Ridge Regression (a linear regression model)/
 **Hyperparameter:** The alpha slider
 
 Here are some references I used in research and while coding this app:
