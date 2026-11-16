@@ -22,7 +22,7 @@ https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/
 
 **Model Used:** Ridge Regression (a linear regression model)
 
-**Hyperparameter:** The alpha slider
+**Hyperparameter:** The alpha slider. Further instructions on how to adjust the alpha level are in the questions section and on the app itself. 
 
 ------------------------------------------------------------------------------------
 **References**
