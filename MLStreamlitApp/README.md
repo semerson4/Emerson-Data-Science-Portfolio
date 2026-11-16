@@ -33,6 +33,7 @@ Here are some references I used in research and while coding this app:
 * https://jbhender.github.io/Stats506/F17/Projects/G13/Python.html 
 
 **Link to the default data set accessed:**
+
 https://www.kaggle.com/datasets/srisyra02/ecommerce-customer-behavior-dataset?resource=download  
 
 ------------------------------------------------------------------------------------
