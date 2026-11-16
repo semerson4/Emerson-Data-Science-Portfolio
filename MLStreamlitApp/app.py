@@ -1,4 +1,6 @@
+#----------------------------------------------------------------------------------------------------------------------------------------------
 #app setup and aestetics
+#----------------------------------------------------------------------------------------------------------------------------------------------
 import os
 
 import streamlit as st
@@ -29,12 +31,14 @@ if choice is not None:
         df_consumers = pd.read_csv(csv_path)
 else:
     st.stop()
-    
+
 #filtering so only numeric columns can be selected
 numeric_cols = df_consumers.select_dtypes(include="number").columns
 target_column = st.selectbox("Select a target column:", numeric_cols)
 
-#making the regression plot ---------------------------------------------------------
+#----------------------------------------------------------------------------------------------------------------------------------------------
+#making the regression plot
+#----------------------------------------------------------------------------------------------------------------------------------------------
 
 #first cleaning data
 df_clean = df_consumers.dropna()
@@ -69,6 +73,10 @@ y_pred = model.predict(X_test)
 r2 = r2_score(y_test, y_pred)
 rmse = mean_squared_error(y_test, y_pred) ** 0.5
 
+#----------------------------------------------------------------------------------------------------------------------------------------------
+#explanations and displays
+#----------------------------------------------------------------------------------------------------------------------------------------------
+
 #Displaying the R and RMSE scores (largely)
 st.subheader("Model Performance on Test Data")
 col1, col2 = st.columns(2)
@@ -85,7 +93,9 @@ st.markdown(f"""
 * High RMSE: The model's predictions are far off from the actual ones.
 """)
 
-# Creating the scatter plot of actual vs predicted values
+#----------------------------------------------------------------------------------------------------------------------------------------------
+# Creating the scatter plot
+#----------------------------------------------------------------------------------------------------------------------------------------------
 st.subheader(f"Actual vs. Predicted: {target_column}")
 results_df = pd.DataFrame({"Actual": y_test, "Predicted": y_pred})
 
