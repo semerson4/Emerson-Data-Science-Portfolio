@@ -1,11 +1,20 @@
 Simply put, the purpose of this app is to test how well a machine learning model can predict a numeric outcome from any dataset. For more details, refer to the frequently asked questions section.
 
-How to run app locally:
+**How to run app locally:**
+Use this link: https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/ if there are issues, follow the steps below:
 
-Link to deployed app:
+1. Download or clone the repository onto your own device through github
+2. Install the required libraries (refer to requirements.txt)
+3. Use the terminal command to run the app in a browser: streamlit run app.py
 
+**Link to deployed app:** 
+https://emerson-data-science-portfolio-zneyhhdgm5zczjdraqztwc.streamlit.app/ 
 
-Libraries needed:
+**Libraries needed with versions:**
+streamlit==1.48.0
+pandas==2.3.1
+scikit-learn==1.9.1
+matplotlib==3.10.0
 
 
 **Model Used:** Ridge Regression (a linear regression model)
