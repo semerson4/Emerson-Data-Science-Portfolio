@@ -12,9 +12,9 @@ Libraries needed:
 **Hyperparameter:** The alpha slider
 
 Here are some references I used in research and while coding this app:
-https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
-https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
-https://jbhender.github.io/Stats506/F17/Projects/G13/Python.html 
+* https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+* https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html
+* https://jbhender.github.io/Stats506/F17/Projects/G13/Python.html 
 
 **Here are some "frequently asked questions" that could be beneficial in understanding the capabilites of this app:**
 
