@@ -6,7 +6,8 @@ step-by-step instructions for running the app locally
 
 the libraries needed, with versions
 
-the models you used and how their hyperparameters can be adjusted
+Model Used: Ridge Regression (a linear regression model)
+Hyperparameter: The alpha slider
 
 Here are some references I used in research and while coding this app:
 https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
@@ -32,4 +33,7 @@ Each blue dot compares an observation’s real value on the x axis, to the equat
 
 **What is the difference between what pd.get_dummies is filtering and the filtering of numeric target categories?**
 In the code, we have to filter target categories (y) because linear regression is limited to columns with numbers. For that reason, the user can only select from columns where the observations are numbers. However, this gets confusing because pd.get_dummies is able to convert predictors (x) to numbers, even if the columns contain categorical observations. Once the user selects a column in the dataset, pd.get_dummies collects the full dataset for the regression against the target column.
+
+**What can a user do with this app?**
+This app allows users to upload any CSV dataset of their choosing to train and analyze a Ridge Regression model without writing code of thier own to fit the dataset. It can be beneficial since it can quickly test whether features in the dataset can accurately predict a chosen outcome.
 
